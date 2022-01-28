@@ -11,21 +11,14 @@ Processing big data to analyze Amazon Vine reviews
 
 ### A picture of the initial data provided:
 ![Initial upload of data](https://github.com/marcuspttr/big-data-challenge/blob/main/Assets/intial_load.PNG)
-The intial data set up looks at the funding dispressed by a charity. It contains a lot of information such as: the name of the organization the funding was provided to,
-the type of application, what the use case was, and of course money amounts and whether or not the funding was successful. 
+I accessed the S3 buckets for Amazon's video game products as well as lawn & garden.  I selected the two data sets because I thought they would be different enough in theme that I could get a more rounded sense of the overall Amazon review datasets. 
 
 I initially dropped the EIN and Name as they were not important factors beyond identification and tracking.
 
-### Preview of data after cleaning & preparing:
+### Cleaning the data:
 ![Overview of data](https://github.com/marcuspttr/big-data-challenge/blob/main/Assets/data_types.PNG)
-Here is a overview of the remaining columns and the count of unique values in each.
 
-Looking at the Application and Classification columns the data had strong common candidates (values in the tens of thousands) trickling down to some values that occurred very rarely (less than 100 or even 10 times). This had me worried by how much variance this represents and if these would represent outliers.
-
-I did some cleaning to group these smaller values into "Other" categories, using the value of anything less than 200 as a rule to group up this "tail" of infrequent data values.
-
-Eventually to prepare for the data scaling and splitting I one hot encoded the categorical data, and some of the resulting dataframe can be seen below:
-### After one hot encoding:
+Here is a resulting schema, making sure it is ready 
 ![One hot dataframe](https://github.com/marcuspttr/big-data-challenge/blob/main/Assets/schema.PNG)
 
 ### Creating the layers of my neural network.
