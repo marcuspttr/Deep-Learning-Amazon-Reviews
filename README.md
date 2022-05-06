@@ -19,6 +19,7 @@ I initially dropped the EIN and Name as they were not important factors beyond i
 ![Overview of data](https://github.com/marcuspttr/big-data-challenge/blob/main/Assets/data_types.PNG)
 
 Here is a resulting schema, making sure it is ready 
+
 ![One hot dataframe](https://github.com/marcuspttr/big-data-challenge/blob/main/Assets/schema.PNG)
 
 ### Creating the layers of my neural network.
